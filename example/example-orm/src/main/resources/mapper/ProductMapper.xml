@@ -1,0 +1,9 @@
+<mapper namespace="tech.codeforc.example.orm.mapper.ProductMapper">
+    <select id="selectList" resultType="tech.codeforc.example.orm.entity.Product">
+        SELECT * FROM product;
+    </select>
+
+    <select id="selectById" resultType="tech.codeforc.example.orm.entity.Product">
+        SELECT * FROM product WHERE id = #{id}
+    </select>
+</mapper>

@@ -1,4 +1,4 @@
-<mapper namespace="user">
+<mapper namespace="tech.codeforc.example.orm.mapper.UserMapper">
     <select id="selectList" resultType="tech.codeforc.example.orm.entity.User">
         SELECT * FROM user;
     </select>
