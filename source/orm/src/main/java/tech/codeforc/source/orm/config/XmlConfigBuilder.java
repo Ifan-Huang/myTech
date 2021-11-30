@@ -6,6 +6,7 @@ import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 import tech.codeforc.source.orm.core.Configuration;
+import tech.codeforc.source.orm.io.Resources;
 
 import java.beans.PropertyVetoException;
 import java.io.InputStream;
@@ -36,6 +37,13 @@ public class XmlConfigBuilder {
         }
 
         configuration.setDataSource(loadDataSource(configurationProperties));
+
+        List<Element> mapperElements = rootElement.selectNodes("//mapper");
+        for (Element mapperElement : mapperElements) {
+            String mapperPath = mapperElement.attributeValue("resource");
+            InputStream resourceAsSteam = Resources.getResourceAsSteam(mapperPath);
+            new XmlMapperBuilder(configuration);
+        }
 
         return configuration;
     }

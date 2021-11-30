@@ -7,4 +7,7 @@
         <property name="username" value="root"/>
         <property name="password" value="root"/>
     </datasource>
+
+    <mapper resource="mapper.UserMapper.xml"/>
+    <mapper resource="mapper.ProductMapper.xml"/>
 </configuration>
