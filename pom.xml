@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>tech.codeforc</groupId>
+    <artifactId>myTech</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <description>
+        The program, launched on November 30, 2021, aims to hone personal technical ability,
+        expand technical vision and improve programming ability. When I'm excited to write the
+        first line of code on this project, I'm sure I'll stick with it for a long time. I will
+        study these software technologies in this project:
+            1. Java
+            2. Framework
+            3. DevOps
+            4. Other programming languages like Golang and Python.
+            5. software engineering
+            ...
+        Long may the code.
+    </description>
+    <modules>
+        <module>source</module>
+        <module>example</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+</project>
