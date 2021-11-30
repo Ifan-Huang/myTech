@@ -1,0 +1,9 @@
+<mapper namespace="user">
+    <select id="selectList" resultType="tech.codeforc.example.orm.entity.User">
+        SELECT * FROM user;
+    </select>
+
+    <select id="selectById" resultType="tech.codeforc.example.orm.entity.User">
+        SELECT * FROM user WHERE id = #{id}
+    </select>
+</mapper>
