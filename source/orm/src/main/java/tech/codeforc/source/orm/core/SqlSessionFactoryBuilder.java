@@ -13,8 +13,8 @@ import java.io.InputStream;
 public class SqlSessionFactoryBuilder {
 
     /**
-     * 通过xmlConfigBuilder解析出configuration
      *
+     * 通过xmlConfigBuilder解析出configuration
      * @param is
      * @return
      */
@@ -22,7 +22,8 @@ public class SqlSessionFactoryBuilder {
         XmlConfigBuilder xmlConfigBuilder = new XmlConfigBuilder();
         Configuration configuration = xmlConfigBuilder.parse(is);
 
-        //TODO
-        return null;
+        //创建SqlSessionFactory对象：工厂类;生产SqlSession会话对象
+        SqlSessionFactory sqlSessionFactory = new DefaultSqlSessionFactory(configuration);
+        return sqlSessionFactory;
     }
 }

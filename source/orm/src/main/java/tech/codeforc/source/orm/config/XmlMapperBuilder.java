@@ -1,6 +1,5 @@
 package tech.codeforc.source.orm.config;
 
-import jdk.jfr.internal.StringPool;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
@@ -8,7 +7,6 @@ import org.dom4j.io.SAXReader;
 import tech.codeforc.source.orm.core.Configuration;
 import tech.codeforc.source.orm.core.MapperStatement;
 
-import javax.xml.parsers.SAXParser;
 import java.io.InputStream;
 import java.util.List;
 
